@@ -11,11 +11,9 @@ const ShipmentCard = ({ url, id, inventory, name, date_created, last_updated, da
 
     let items_list = [];
 
-    for (let i = 0; i < data.length; i++) {
-        if (id === data[i].ship_id) {
-            for (let j = 0; j < data[i].items.length; j++) {
-                items_list.push({ "item": data[i].items[j].item, "amount": data[i].items[j].amount });
-            }
+    for (let i = 0; i < data.items.length; i++) {
+        if (id === data.ship_id) {
+            items_list.push({ "item": data.items[i].item, "amount": data.items[i].amount });
         };
     };
 
@@ -32,15 +30,15 @@ const ShipmentCard = ({ url, id, inventory, name, date_created, last_updated, da
                     items_list.map((e) => {
                         return (
                             <div key={e.item} className='Price' style={{ marginTop: '5px' }}>
-                                Item: {e.item + '\t\t'}
-                                Amount: {e.amount}
+                                <b>Item:</b> {e.item + '\t\n'}
+                                <b>Amount:</b> {e.amount}
                             </div>
                         )
                     })
                 }
 
                 <div className='Amount' style={{ marginTop: '5px' }}>
-                    Items in Shipment: {inventory}
+                    <b>Items in Shipment:</b> {inventory}
                 </div>
                 <div className='meta'>
                     <span className='date'>Date Created: {createdDate}</span>

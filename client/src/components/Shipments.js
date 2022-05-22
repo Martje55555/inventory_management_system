@@ -57,7 +57,7 @@ const Shipments = () => {
                     /> :
                         shipments.map((e) => {
                             return (
-                                <div key={e.id}>
+                                <div key={e.ship_id}>
                                     <ShipmentCard
                                         url={url}
                                         id={e.ship_id}

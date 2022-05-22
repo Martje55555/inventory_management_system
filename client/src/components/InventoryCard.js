@@ -27,10 +27,10 @@ const InventoryCard = ({ url, id, amount, name, date_created, last_updated, pric
             <div className='content'>
                 <div className='header'>{name.charAt(0).toUpperCase() + name.slice(1)}</div>
                 <div className='Price' style={{ marginTop: '5px' }}>
-                    Price: {price}
+                    <b>Price:</b> {price}
                 </div>
                 <div className='Amount' style={{ marginTop: '5px' }}>
-                    Amount: {amount}
+                    <b>Amount:</b> {amount}
                 </div>
                 <div className='meta'>
                     <span className='date'>Date Created: {createdDate}</span>
