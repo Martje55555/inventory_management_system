@@ -1,6 +1,7 @@
 # Fall 2022 - Shopify Developer Intern Challenge Question
 
 ### Link to [Replit](https://replit.com/@JesusMartinez17/Fall-2022-Shopify-Intern-Challenge#README.md)
+
 ## App Feautures
 * CRUD funcionalities for the inventory:
    * Create Inventory Items
@@ -8,6 +9,9 @@
    * Delete Them
    * View a list of them
 * Ability to create “shipments” and assign inventory to the shipment, and adjust inventory appropriately
+
+### Already Set Up?
+* Run `npm run dev` in the root directory to start the client/server.
 
 ## Pre-reqs:
 This challenge was tackled using Node.js and Postgres, for the backend, and React.js for the front-end.
@@ -43,3 +47,7 @@ Here is a link to a postman collection, where I tested the different endpoints -
  <img width="1303" alt="image" src="https://user-images.githubusercontent.com/71607977/169715975-1069d219-0d47-4d37-81cc-66943d2a4692.png">
  
  In the `src/components` directory is where all the different pages/components for the client lives.
+
+ ### Starting the Client and the API after set-up:
+ * Run the following command in the root directory - `npm run dev`
+

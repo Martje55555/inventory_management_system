@@ -18,6 +18,14 @@ const client = new Client({
     port: 5432,
 });
 
+// FOR REPLIT POSTGRES DB
+// var client = new Client({
+//     connectionString: 'postgres://ywcoprrz:xtbHw7OADMzXpC7H-qRQ141tXnTYwrtS@drona.db.elephantsql.com/ywcoprrz',
+//     ssl: {
+//       rejectUnauthorized: false
+//     }
+//   });
+
 client.connect(function (err) {
     if (err) throw err;
     console.log("Connected!");

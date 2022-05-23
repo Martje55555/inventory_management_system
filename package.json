@@ -1,0 +1,21 @@
+{
+  "name": "shopify_challenge",
+  "version": "1.0.0",
+  "description": "## Pre-reqs: This challenge was tackled using Node.js and Postgres, for the backend, and React.js for the front-end.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "npm start -- prefix api",
+    "client": "npm start -- prefix client",
+    "dev": "(cd api && npm start) & (cd client && npm start)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Martje55555/Fall-2022-Shopify-Intern-Challenge.git"
+  },
+  "author": "Martje55555",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Martje55555/Fall-2022-Shopify-Intern-Challenge/issues"
+  },
+  "homepage": "https://github.com/Martje55555/Fall-2022-Shopify-Intern-Challenge#readme"
+}
