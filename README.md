@@ -1,4 +1,3 @@
-# Fall 2022 - Shopify Developer Intern Challenge Question
 
 ## Fullstack Inventory Management System
 
